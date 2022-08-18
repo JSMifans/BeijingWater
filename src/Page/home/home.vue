@@ -1,14 +1,20 @@
 <template>
-	<div id="cesiumContainer"></div>
+	<div id="cesiumContainer">
+		<Header></Header>
+		<LeftContainer></LeftContainer>
+		<Center></Center>
+		<Right></Right>
+	</div>
 </template>
 
 <script setup>
-import MViewer from '@/components/cesium/MViewer'
+// import MViewer from '@/components/cesium/MViewer'
 import { onMounted } from 'vue'
-
-onMounted(() => {
-	const viewer = new MViewer('cesiumContainer').init()
-})
+import Header from '../header/Header.vue'
+import LeftContainer from '../leftcontailer/left.vue'
+import Center from '../centerContainer/center.vue'
+import Right from '../rightContainer/rightContainer.vue'
+onMounted(() => {})
 </script>
 
-<style lang="less"></style>
+<style scoped></style>
